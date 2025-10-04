@@ -25,8 +25,8 @@ jobs:
           distribution: temurin
           java-version: 17
           server-id: github
-          server-username: ${{ github.actor }}
-          server-password: ${{ secrets.GITHUB_TOKEN }}
+          server-username: GITHUB_ACTOR
+          server-password: GITHUB_TOKEN
           
       - name: Upload settings.xml for debugging
         uses: actions/upload-artifact@v4
