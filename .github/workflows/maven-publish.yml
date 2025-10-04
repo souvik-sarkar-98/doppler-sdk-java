@@ -27,7 +27,12 @@ jobs:
           server-id: github
           server-username: ${{ github.actor }}
           server-password: ${{ secrets.GITHUB_TOKEN }}
-
+          
+      - name: Upload settings.xml for debugging
+        uses: actions/upload-artifact@v3
+        with:
+          name: maven-settings
+          path: .github/maven/settings.xml
       - name: Build and Publish
         run: |
           mvn -B package
