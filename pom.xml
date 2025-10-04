@@ -31,7 +31,7 @@
         <repository>
             <id>github</id>
             <name>GitHub Packages</name>
-            <url>https://maven.pkg.github.com/souvik-sarkar-98/doppler-sdk-java</url>
+            <url>https://maven.pkg.github.com/nabarun-ngo/ngo-nabarun-library</url>
         </repository>
     </distributionManagement>
 </project>
